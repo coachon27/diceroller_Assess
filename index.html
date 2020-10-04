@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <label for="user-entry">Enter the # of sides for your die!</label>
+        <input type="number" name="user-entry" id="dieSides" />
+       
+        <label for="user-entry">Enter the # of dice you want to roll!</label>
+        <input type="text" name="user-entry" id="textbox" />
+        <button id="roll">Roll!</button> 
+    </header>
+
+    <main>
+        <div class="results-container">
+            <p> This is where you will see RESULTS!</p>
+            <div>Total: <span id="roll-total"></span></div>
+        
+            <div>
+                <button id="indyRolls">Show All Rolls</button> 
+            </div>
+        
+            <div>
+                <ol id="allRolls"> </ol> 
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <br>
+        <p> If you want to play again, press the <strong>Reset</strong> button below!</p>
+        <button id ="reset">Reset!</button> 
+    </footer>
+<!--onclick="document.getElementById('textbox').value-->
+    <script src="assets/main.js"></script>
+</body>
+</html>
